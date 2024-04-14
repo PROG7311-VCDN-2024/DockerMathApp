@@ -1,10 +1,10 @@
 # DockerMathApp
 ## Getting started with Docker
-Make sure you have Docker and .NET 8.0 SDK on your PC
+Make sure you have Docker (https://www.docker.com/products/docker-desktop/) and .NET 8.0 SDK on your PC
 
-You will need to clone the MathhApp repo for this tutorial 
+You will need to clone the MathhApp repo for this tutorial (https://github.com/PROG7311-VCDN-2024/MathApp)
 
-Make sure that the MathApp is working on your PC 
+Make sure that the MathApp is working on your PC (variables, connection strings, etc)
 
 ## Guide for Adding Project to a Docker Container
 ### STEP 1 
