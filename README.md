@@ -59,4 +59,28 @@ DEBUG:
 RELEASE:
 ![image](https://github.com/PROG7311-VCDN-2024/DockerMathApp/assets/102237289/3f215481-e144-4103-a129-d19678d580e4)
 
-
+## Adding SQL DB to Docker
+### STEP 1 
+Change your connection string from "Server = localhost.." to "Server = sql_server..."
+### STEP 2
+Run the following line to see the image
+```
+docker image ls
+```
+### STEP 3
+Inside your docker-compose.yml file add the following lines of code 
+```
+sql:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: sql_server
+    ports: 
+      - "1433:1433" 
+    environment:
+      - ACCEPT_EULA=y
+      - SA_PASSWORD= P@SSW0RD1
+```
+### STEP 4
+Run the following command 
+```
+docker-compose up
+```
